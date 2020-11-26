@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int n,f,l,temp;
+    printf("Enter a number here: ");
+    scanf("%d",&n);
+    f=n;
+    while(f>=10)
+    {
+        f=f/10;
+    }
+    printf("first digit is = %d",f);
+    l=n%10;
+    printf("\nLast digit is = %d",l);
+    temp=f;
+    f=l;
+    l=temp;
+    printf("\nNow first digit is %d and last digit is %d",f,l);
+    return 0;
+}
